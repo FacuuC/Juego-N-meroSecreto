@@ -47,6 +47,7 @@ function generarNumeroSecreto() {
         asignarTextoElemento('p','Ya se sortearon todos los números posibles');
     } else if (maxJuegos == contadorJuegos) {
         asignarTextoElemento('p','Ya se sortearon todos los juegos posibles');
+        document.querySelector("#intentar").setAttribute("disabled","true")
     } else {
         //Si el numero generado está incluido en la lista 
         if (listaNumerosSorteados.includes(numeroGenerado)) {
